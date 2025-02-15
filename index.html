@@ -6,8 +6,15 @@
     <title>Harry Potter Valentine's</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
+<body class="background-overlay">
+
+    <div id="password-container" class="password-container">
+        <label for="password" class="password-label">Introduce la contraseña:</label>
+        <input type="password" id="password" class="password-input" placeholder="Contraseña">
+        <button onclick="checkPassword()" class="password-button">Acceder</button>
+    </div>
+
+    <div class="container" id="card-container" style="visibility: collapse;">
         <div class="background-overlay"></div>
         <div class="sparkles-container"></div>
         <div class="card" id="magic-card">

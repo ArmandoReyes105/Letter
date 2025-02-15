@@ -100,10 +100,12 @@ body, html {
     transform: translateY(0);
     background-image: url('https://img.freepik.com/free-vector/vector-boho-art-tribal-doodle-sketch-straight-line-frame_53876-170605.jpg');
     background-size: 100% 100%;
+    display: flex;
+    justify-content: start;
 }
 
 #card-text {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color: #3c3c3c;
     font-family: 'Garamond', serif;
     white-space: pre-wrap;
@@ -155,4 +157,66 @@ body {
 @keyframes falling-star {
     0% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(100px); opacity: 0; }
+}
+
+
+
+.password-container {
+    background-image: url("https://img.freepik.com/free-vector/vector-boho-art-tribal-doodle-sketch-straight-line-frame_53876-170605.jpg");
+    background-size: cover;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Etiqueta de la contraseña */
+.password-label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+/* Estilo para el campo de entrada */
+.password-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+    background-color: transparent;
+    text-align: center;
+}
+
+.password-input:focus {
+    border: 1px solid #4a0e0e;
+    outline: none;
+}
+
+.password-input:hover {
+    border: 1px solid #4a0e0e;
+    outline: none;
+}
+
+.password-button {
+    background-color: #4a0e0e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: static;
 }

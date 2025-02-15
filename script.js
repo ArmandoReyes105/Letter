@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const correctPassword = "301017"; // Cambia esta contraseña por la que desees
+
+    const passwordContainer = document.getElementById("password-container");
+    const cardContainer = document.getElementById("card-container");
     const fullText = `
 Mi querido/a [Nombre],
 
@@ -13,9 +17,24 @@ Con todo mi amor,
     const card = document.getElementById('magic-card');
     const cardText = document.getElementById('card-text');
     const sparklesContainer = document.querySelector('.sparkles-container');
+    const passwordInput = document.getElementById('password');
+    const passwordButton = document.querySelector('.password-button');
 
     let isOpen = false;
     let textIndex = 0;
+
+    // Función para verificar la contraseña
+    function checkPassword() {
+        const inputPassword = passwordInput.value;
+        if (inputPassword === correctPassword) {
+            passwordContainer.style.display = "none"; // Ocultar contenedor de la contraseña
+            cardContainer.style.visibility = "visible"; // Mostrar la carta
+        } else {
+            alert("Contraseña incorrecta. Intenta de nuevo.");
+        }
+    }
+
+    passwordButton.addEventListener('click', checkPassword); // Evento para verificar la contraseña
 
     toggleButton.addEventListener('click', function () {
         isOpen = !isOpen;
@@ -52,4 +71,5 @@ Con todo mi amor,
         sparklesContainer.appendChild(sparkle);
     }
 });
+
 
