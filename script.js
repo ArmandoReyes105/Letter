@@ -1,17 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const correctPassword = "301017"; // Cambia esta contraseña por la que desees
+    const correctPassword = "30102017"; // Cambia esta contraseña por la que desees
 
     const passwordContainer = document.getElementById("password-container");
     const cardContainer = document.getElementById("card-container");
     const fullText = `
-Mi querido/a [Nombre],
+Mi pequeña agente pececito,
 
-En este día especial, quiero recordarte que nuestro amor es más mágico que cualquier hechizo en Hogwarts...
+Mi amorcito, se que esta "carta" no la leeras el 14, pero si el 15 de febrero, pero igualmente quiero decirte que cada momento a tu lado es el mejor, y es lo mejor que me pudo pasar.
+Me encanta poder estar contigo, a tu lado, con una sola sonrisa tuya iluminas días y haces que cada momento sea más bonito y especial. Este es nuestro 8º 14 de febrero juntos, y aun sigo sintiendo el mismo amor hacia ti, que incluso es mayor dia con dia. 
+Gracias por cada instante a tu lado, por cada sonrida contigo y por que momento a tu lado. Solo queria recordarte lo mucho que te amo y lo increible que eres. te amo demasiado mi niña hermosa
 
-Contigo, cada día es una aventura, cada momento es especial, y nuestro amor es eterno como el Expecto Patronum que ilumina mi vida.
+(Disculpa la presentación de esta carta)
+
+Te amo demasiado ❤️
 
 Con todo mi amor,
-[Tu Nombre]`;
+Yo, tu sabes quien soy (guiño guiño)
+
+Febrero 14, 2025`;
 
     const toggleButton = document.getElementById('toggle-button');
     const card = document.getElementById('magic-card');

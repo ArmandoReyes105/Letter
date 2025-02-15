@@ -80,12 +80,13 @@ body, html {
 .card-content {
     position: absolute;
     inset: 0;
-    padding: 3rem;
+    padding: .5rem 1.5rem;
     background-color: #f9f3e3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
     opacity: 0;
     transform: translateY(100%);
     transition: transform 0.5s ease, opacity 0.5s ease;
